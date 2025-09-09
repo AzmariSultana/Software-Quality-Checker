@@ -13,7 +13,7 @@ Target variable: Quality_Label (Low, Medium, High)
 
 # Features
 
-Quantitative:
+1.Quantitative:
 
 Lines_of_Code
 
@@ -29,7 +29,7 @@ Num_Bugs
 
 Code_Owner_Experience
 
-Categorical:
+2.Categorical:
 
 Has_Unit_Tests (Yes/No)
 
