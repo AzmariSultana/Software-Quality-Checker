@@ -33,7 +33,7 @@ Code_Owner_Experience
 
 Has_Unit_Tests (Yes/No)
 
-# Preprocessing
+# Pre-processing
 
 Missing values → replaced with median for numeric features.
 
@@ -68,4 +68,31 @@ Macro-F1: ~0.29
 
 Struggled due to small dataset & class imbalance.
 
+# Project Setup Guide
+1. Clone the repository
 
+2. Open in Google Colab
+
+   Go to Google Colab
+
+   Upload Notebook or open the notebook directly from GitHub.
+
+3.Upload Dataset to Google Drive
+
+Upload your dataset to your Google Drive (e.g., inside a folder datasets/).
+
+Mount Google Drive in Colab:
+
+```text
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+4.Change Dataset Path in Code
+```text
+df = pd.read_csv("/content/drive/MyDrive/datasets/your_dataset.csv")
+```
+
+5.Run the notebook
+
+Execute all cells step by step to train and test the model.
