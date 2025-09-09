@@ -68,14 +68,4 @@ Macro-F1: ~0.29
 
 Struggled due to small dataset & class imbalance.
 
-# Installation
-1. Clone Repository
 
-2. Install Dependencies
-```text
-pip install -r requirements.txt
-```
-3. Run
-```text
-jupyter notebook SoftwareQualityChecker.ipynb
-```
