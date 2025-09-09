@@ -74,9 +74,9 @@ Struggled due to small dataset & class imbalance.
 
 2. Open in Google Colab
 
-   Go to Google Colab
+Go to Google Colab
 
-   Upload Notebook or open the notebook directly from GitHub.
+Upload Notebook or open the notebook directly from GitHub.
 
 3.Upload Dataset to Google Drive
 
