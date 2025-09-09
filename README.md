@@ -69,6 +69,7 @@ Macro-F1: ~0.29
 Struggled due to small dataset & class imbalance.
 
 # Project Setup Guide
+
 1. Clone the repository
 
 2. Open in Google Colab
