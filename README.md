@@ -15,58 +15,58 @@ Target variable: Quality_Label (Low, Medium, High)
 
 1.Quantitative:
 
-Lines_of_Code
+- Lines_of_Code
 
-Cyclomatic_Complexity
+- Cyclomatic_Complexity
 
-Num_Functions
+- Num_Functions
 
-Code_Churn
+- Code_Churn
 
-Comment_Density
+- Comment_Density
 
-Num_Bugs
+- Num_Bugs
 
-Code_Owner_Experience
+- Code_Owner_Experience
 
 2.Categorical:
 
-Has_Unit_Tests (Yes/No)
+- Has_Unit_Tests (Yes/No)
 
 # Pre-processing
 
-Missing values → replaced with median for numeric features.
+- Missing values → replaced with median for numeric features.
 
-Categorical encoding → converted to binary/numeric (e.g., Yes=1, No=0).
+- Categorical encoding → converted to binary/numeric (e.g., Yes=1, No=0).
 
-Scaling → StandardScaler applied for consistent feature range.
+- Scaling → StandardScaler applied for consistent feature range.
 
-Data split → 70% training, 30% testing (stratified to preserve balance).
+- Data split → 70% training, 30% testing (stratified to preserve balance).
 
 # Models & Results
 1. Decision Tree 
 
-Accuracy: 32.08%
+  - Accuracy: 32.08%
 
-Macro-F1: ~0.32
+  - Macro-F1: ~0.32
 
-Strengths: Interpretable, works with mixed data types.
+  - Strengths: Interpretable, works with mixed data types.
 
 2. Naive Bayes 
 
-Accuracy: 35.42% (best)
+  - Accuracy: 35.42% (best)
 
-Macro-F1: ~0.34
+  - Macro-F1: ~0.34
 
-Weakness: Confused Low vs. Medium quality due to overlapping features.
+  - Weakness: Confused Low vs. Medium quality due to overlapping features.
 
 3. Neural Network 
 
-Accuracy: 29.79%
-
-Macro-F1: ~0.29
-
-Struggled due to small dataset & class imbalance.
+  - Accuracy: 29.79%
+    
+  - Macro-F1: ~0.29
+    
+  - Struggled due to small dataset & class imbalance.
 
 # Project Setup Guide
 
@@ -74,26 +74,26 @@ Struggled due to small dataset & class imbalance.
 
 2. Open in Google Colab
 
-Go to Google Colab
-
-Upload Notebook or open the notebook directly from GitHub.
+  - Go to Google Colab
+  
+  - Upload Notebook or open the notebook directly from GitHub.
 
 3.Upload Dataset to Google Drive
 
-Upload your dataset to your Google Drive (e.g., inside a folder datasets/).
+  - Upload the dataset to your Google Drive (e.g., inside a folder datasets/).
 
 Mount Google Drive in Colab:
 
-```text
+```
 from google.colab import drive
 drive.mount('/content/drive')
 ```
 
 4.Change Dataset Path in Code
-```text
-df = pd.read_csv("/content/drive/MyDrive/datasets/your_dataset.csv")
+```
+df = pd.read_csv("/content/drive/MyDrive/datasets/software_quality_dataset.csv")
 ```
 
 5.Run the notebook
 
-Execute all cells step by step to train and test the model.
+  - Execute all cells step by step to train and test the model.
